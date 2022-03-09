@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
 body{
@@ -10,6 +14,40 @@ body{
 h1{
 	font-size: 2em; 
 	font-weight: bold;
+}
+
+.text{
+	background-color: rgba(255, 255, 255, .8);
+	border: 10px solid black;
+	padding: 30px;
+  }
+
+  .container{
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	row-gap: 30px;
+  }
+
+  .first, 
+.second {
+  grid-column: 2;
+}
+
+.first-image, 
+.second-image {
+  grid-column: 1/ span 3;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.first-image, 
+.first {
+  grid-row: 1/ span 1;
+}
+
+.second-image, 
+.second {
+  grid-row: 2/ span 1;
 }
 
 .active{
@@ -30,7 +68,7 @@ a:active {
 /*Style the images*/
 img{
     height: 200px;
-    width:auto;
+    width: 100%;
     border: 3px solid #00274C;
     padding: 25px;
     border-radius: 10px;
