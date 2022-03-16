@@ -31,8 +31,21 @@
         <img src = "images/hands_and_computer.jpeg" alt = "Hands typing on a computer." width="200"/>
         <p> We are always looking to work with companies to put up recruitment events on campus such as tech talks, information sessions, and networking sessions. Such recruitment events help create relationships between students and recruiters in a smaller, more relaxed setting. For companies interested in hosting an event with us or would like more information, please contact us at upe.iotaboard@gmail.com. </p>
 		<h2> Sign up for our mailing list</h2>
-		<label for="email">Email:</label>
-<input type="text" name="email" id="email"><br>
+		<form
+  action="https://formspree.io/f/mrgjllbd"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 	</main>
 	<footer>
 		<p>&copy; 2022 Upsilon Pi Epsilon Iota Chapter• </p>
